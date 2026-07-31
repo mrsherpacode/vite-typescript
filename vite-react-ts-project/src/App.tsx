@@ -2,6 +2,7 @@ import Heading from "./components/Heading";
 import Sections from "./components/Sections";
 import Counter from "./components/Counter";
 import List from "./components/List";
+import CounterReducer from "./components/CounterReducer";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         items={["ktm 🗺️", "po 😭", "np 👍"]}
         render={(item) => <span className="bold">{item}</span>}
       />
+
+      <CounterReducer>{(num) => <span> Count:{num}</span>}</CounterReducer>
     </>
   );
 }
